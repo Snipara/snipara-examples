@@ -48,63 +48,279 @@
   "cases": [
     {
       "id": "cost_benefit_analysis",
-      "with_snipara": {"overall": 9.15, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 10, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 9.45, "correctness": 9, "completeness": 10, "relevance": 10, "faithfulness": 9, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 9.15,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 9.45,
+        "correctness": 9,
+        "completeness": 10,
+        "relevance": 10,
+        "faithfulness": 9,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "when_to_use_decompose",
-      "with_snipara": {"overall": 10.0, "correctness": 10, "completeness": 10, "relevance": 10, "faithfulness": 10, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 10.0, "correctness": 10, "completeness": 10, "relevance": 10, "faithfulness": 10, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 10.0,
+        "correctness": 10,
+        "completeness": 10,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 10.0,
+        "correctness": 10,
+        "completeness": 10,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "search_mode_selection",
-      "with_snipara": {"overall": 9.4, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 10, "clarity": 10, "true_hallucination_rate": 0.059, "factual_accuracy": 0.909},
-      "raw_window": {"overall": 9.2, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 9, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 9.4,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 10,
+        "true_hallucination_rate": 0.059,
+        "factual_accuracy": 0.909
+      },
+      "raw_window": {
+        "overall": 9.2,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 9,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "full_request_flow",
-      "with_snipara": {"overall": 9.4, "correctness": 9, "completeness": 10, "relevance": 10, "faithfulness": 9, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 8.55, "correctness": 8, "completeness": 9, "relevance": 10, "faithfulness": 8, "clarity": 9, "true_hallucination_rate": 0.081, "factual_accuracy": 0.25}
+      "with_snipara": {
+        "overall": 9.4,
+        "correctness": 9,
+        "completeness": 10,
+        "relevance": 10,
+        "faithfulness": 9,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 8.55,
+        "correctness": 8,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 8,
+        "clarity": 9,
+        "true_hallucination_rate": 0.081,
+        "factual_accuracy": 0.25
+      }
     },
     {
       "id": "security_authentication_chain",
-      "with_snipara": {"overall": 8.7, "correctness": 8, "completeness": 9, "relevance": 10, "faithfulness": 8, "clarity": 10, "true_hallucination_rate": 0.023, "factual_accuracy": 0.75},
-      "raw_window": {"overall": 7.55, "correctness": 7, "completeness": 8, "relevance": 9, "faithfulness": 6, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 8.7,
+        "correctness": 8,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 8,
+        "clarity": 10,
+        "true_hallucination_rate": 0.023,
+        "factual_accuracy": 0.75
+      },
+      "raw_window": {
+        "overall": 7.55,
+        "correctness": 7,
+        "completeness": 8,
+        "relevance": 9,
+        "faithfulness": 6,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "shared_context_budget_allocation",
-      "with_snipara": {"overall": 9.1, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 9, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 4.6, "correctness": 3, "completeness": 5, "relevance": 8, "faithfulness": 3, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 9.1,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 9,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 4.6,
+        "correctness": 3,
+        "completeness": 5,
+        "relevance": 8,
+        "faithfulness": 3,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "nonexistent_feature",
-      "with_snipara": {"overall": 10.0, "correctness": 10, "completeness": 10, "relevance": 10, "faithfulness": 10, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 8.4, "correctness": 8, "completeness": 9, "relevance": 9, "faithfulness": 8, "clarity": 9, "true_hallucination_rate": 0.023, "factual_accuracy": 0.8}
+      "with_snipara": {
+        "overall": 10.0,
+        "correctness": 10,
+        "completeness": 10,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 8.4,
+        "correctness": 8,
+        "completeness": 9,
+        "relevance": 9,
+        "faithfulness": 8,
+        "clarity": 9,
+        "true_hallucination_rate": 0.023,
+        "factual_accuracy": 0.8
+      }
     },
     {
       "id": "error_handling",
-      "with_snipara": {"overall": 9.35, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 10, "clarity": 10, "true_hallucination_rate": 0.062, "factual_accuracy": 0.5},
-      "raw_window": {"overall": 7.8, "correctness": 7, "completeness": 8, "relevance": 9, "faithfulness": 7, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 9.35,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 10,
+        "true_hallucination_rate": 0.062,
+        "factual_accuracy": 0.5
+      },
+      "raw_window": {
+        "overall": 7.8,
+        "correctness": 7,
+        "completeness": 8,
+        "relevance": 9,
+        "faithfulness": 7,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "empty_context",
-      "with_snipara": {"overall": 10.0, "correctness": 10, "completeness": 10, "relevance": 10, "faithfulness": 10, "clarity": 10, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 9.2, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 10, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0}
+      "with_snipara": {
+        "overall": 10.0,
+        "correctness": 10,
+        "completeness": 10,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 10,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 9.2,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 10,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      }
     },
     {
       "id": "snipara_sandbox_execution",
-      "with_snipara": {"overall": 7.55, "correctness": 7, "completeness": 8, "relevance": 9, "faithfulness": 6, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 7.7, "correctness": 7, "completeness": 7, "relevance": 9, "faithfulness": 8, "clarity": 9, "true_hallucination_rate": 0.111, "factual_accuracy": 0.0}
+      "with_snipara": {
+        "overall": 7.55,
+        "correctness": 7,
+        "completeness": 8,
+        "relevance": 9,
+        "faithfulness": 6,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 7.7,
+        "correctness": 7,
+        "completeness": 7,
+        "relevance": 9,
+        "faithfulness": 8,
+        "clarity": 9,
+        "true_hallucination_rate": 0.111,
+        "factual_accuracy": 0.0
+      }
     },
     {
       "id": "memory_persistence",
-      "with_snipara": {"overall": 8.1, "correctness": 8, "completeness": 7, "relevance": 9, "faithfulness": 9, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 8.5, "correctness": 8, "completeness": 8, "relevance": 10, "faithfulness": 9, "clarity": 9, "true_hallucination_rate": 0.048, "factual_accuracy": 0.0}
+      "with_snipara": {
+        "overall": 8.1,
+        "correctness": 8,
+        "completeness": 7,
+        "relevance": 9,
+        "faithfulness": 9,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 8.5,
+        "correctness": 8,
+        "completeness": 8,
+        "relevance": 10,
+        "faithfulness": 9,
+        "clarity": 9,
+        "true_hallucination_rate": 0.048,
+        "factual_accuracy": 0.0
+      }
     },
     {
       "id": "swarm_coordination",
-      "with_snipara": {"overall": 9.05, "correctness": 9, "completeness": 9, "relevance": 10, "faithfulness": 9, "clarity": 9, "true_hallucination_rate": 0.0, "factual_accuracy": 1.0},
-      "raw_window": {"overall": 8.6, "correctness": 8, "completeness": 9, "relevance": 10, "faithfulness": 8, "clarity": 9, "true_hallucination_rate": 0.047, "factual_accuracy": 0.333}
+      "with_snipara": {
+        "overall": 9.05,
+        "correctness": 9,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 9,
+        "clarity": 9,
+        "true_hallucination_rate": 0.0,
+        "factual_accuracy": 1.0
+      },
+      "raw_window": {
+        "overall": 8.6,
+        "correctness": 8,
+        "completeness": 9,
+        "relevance": 10,
+        "faithfulness": 8,
+        "clarity": 9,
+        "true_hallucination_rate": 0.047,
+        "factual_accuracy": 0.333
+      }
     }
   ]
 }

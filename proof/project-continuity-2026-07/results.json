@@ -108,9 +108,9 @@
       }
     ],
     "group_aggregates": [
-      {"runtime_group": "local", "cold_passes": 0, "snipara_passes": 170, "total_runs": 180},
-      {"runtime_group": "codex_cli", "cold_passes": 25, "snipara_passes": 179, "total_runs": 180},
-      {"runtime_group": "claude", "cold_passes": 7, "snipara_passes": 120, "total_runs": 120}
+      { "runtime_group": "local", "cold_passes": 0, "snipara_passes": 170, "total_runs": 180 },
+      { "runtime_group": "codex_cli", "cold_passes": 25, "snipara_passes": 179, "total_runs": 180 },
+      { "runtime_group": "claude", "cold_passes": 7, "snipara_passes": 120, "total_runs": 120 }
     ]
   },
   "limits": {

@@ -33,10 +33,10 @@ The public proof page reports six controlled scenarios with ten paired
 repetitions per model. Provider/runtime groups stay separate:
 
 | Runtime group | Cold passes | With Snipara |
-| --- | ---: | ---: |
-| Local models | 0 / 180 | 170 / 180 |
-| Codex CLI | 25 / 180 | 179 / 180 |
-| Claude | 7 / 120 | 120 / 120 |
+| ------------- | ----------: | -----------: |
+| Local models  |     0 / 180 |    170 / 180 |
+| Codex CLI     |    25 / 180 |    179 / 180 |
+| Claude        |     7 / 120 |    120 / 120 |
 
 See [`results.json`](./results.json) for the model-level values and deterministic
 quality/continuity scores copied from the public proof page.
