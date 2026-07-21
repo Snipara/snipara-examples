@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "artifact_kind": "published_summary",
+  "source_url": "https://www.snipara.com/proof",
+  "source_commit": "1cf8c6cd4f8f15047360b28ff3a8dce865be0a9a",
+  "captured_at": "2026-07-21",
+  "repository_replay": {
+    "task": "Complete Safe Parallel Coding MVP5/MVP6",
+    "base_commit": "499d63a3",
+    "final_commit": "9785471a",
+    "answer_key": {
+      "commit_count": 14,
+      "changed_files": 76,
+      "insertions": 5475,
+      "deletions": 270,
+      "test_and_support_files": 31,
+      "surface_categories": 7
+    },
+    "cold": {
+      "searches": 16,
+      "unique_search_hits": 1722,
+      "files_opened": 47,
+      "answer_key_files_found": 5,
+      "surface_categories_found": 3
+    },
+    "with_snipara": {
+      "start_artifacts": 3,
+      "anchor_files": 5,
+      "surface_categories_found": 7
+    },
+    "time_to_reliable_plan": null
+  },
+  "continuity_suite": {
+    "scenarios": 6,
+    "paired_repetitions_per_model": 10,
+    "models": [
+      {
+        "runtime_group": "local",
+        "model": "GPT-OSS 20B",
+        "cold_passes": 0,
+        "snipara_passes": 60,
+        "total_runs": 60,
+        "code_quality": 97.9,
+        "continuity_score": 97.5
+      },
+      {
+        "runtime_group": "local",
+        "model": "Qwen3-Coder 30B",
+        "cold_passes": 0,
+        "snipara_passes": 57,
+        "total_runs": 60,
+        "code_quality": 96.3,
+        "continuity_score": 95.4
+      },
+      {
+        "runtime_group": "local",
+        "model": "Devstral Small 2 24B",
+        "cold_passes": 0,
+        "snipara_passes": 53,
+        "total_runs": 60,
+        "code_quality": 93.8,
+        "continuity_score": 94.8
+      },
+      {
+        "runtime_group": "codex_cli",
+        "model": "GPT-5.3 Codex Spark",
+        "cold_passes": 23,
+        "snipara_passes": 59,
+        "total_runs": 60,
+        "code_quality": 98.1,
+        "continuity_score": 98.1
+      },
+      {
+        "runtime_group": "codex_cli",
+        "model": "GPT-5.4",
+        "cold_passes": 2,
+        "snipara_passes": 60,
+        "total_runs": 60,
+        "code_quality": 99.8,
+        "continuity_score": 99.8
+      },
+      {
+        "runtime_group": "codex_cli",
+        "model": "GPT-5.5",
+        "cold_passes": 0,
+        "snipara_passes": 60,
+        "total_runs": 60,
+        "code_quality": 99.3,
+        "continuity_score": 98.3
+      },
+      {
+        "runtime_group": "claude",
+        "model": "Claude Sonnet 4.6",
+        "cold_passes": 0,
+        "snipara_passes": 60,
+        "total_runs": 60,
+        "code_quality": 98.4,
+        "continuity_score": 98.4
+      },
+      {
+        "runtime_group": "claude",
+        "model": "Claude Opus 4.8",
+        "cold_passes": 7,
+        "snipara_passes": 60,
+        "total_runs": 60,
+        "code_quality": 98.3,
+        "continuity_score": 98.3
+      }
+    ],
+    "group_aggregates": [
+      {"runtime_group": "local", "cold_passes": 0, "snipara_passes": 170, "total_runs": 180},
+      {"runtime_group": "codex_cli", "cold_passes": 25, "snipara_passes": 179, "total_runs": 180},
+      {"runtime_group": "claude", "cold_passes": 7, "snipara_passes": 120, "total_runs": 120}
+    ]
+  },
+  "limits": {
+    "snipara_owned_repository": true,
+    "continuity_dependent_scenarios": true,
+    "negative_control_published": false,
+    "raw_trace_bundle_in_this_repository": false,
+    "global_model_ranking_claim": false,
+    "time_to_plan_claim": false
+  }
+}

@@ -15,6 +15,9 @@ private runbooks, internal ranking code, or credentials are included.
 - [`benchmarks/hosted-context-2026-06`](./benchmarks/hosted-context-2026-06)
   contains the frozen June 19, 2026 context-selection evidence pack and its
   committed [`results.json`](./benchmarks/hosted-context-2026-06/results.json).
+- [`proof/project-continuity-2026-07`](./proof/project-continuity-2026-07)
+  mirrors the measured summary from the public Project Intelligence proof
+  replay, with its owned-repository and negative-control limits kept explicit.
 
 Verify the benchmark evidence with only Python's standard library:
 
@@ -49,6 +52,15 @@ It is one hosted run per task, not a universal model-quality guarantee. Model
 behavior and the live hosted index can change, so future reruns should publish a
 new dated evidence pack instead of rewriting the historical result.
 
+## Additional controlled proof
+
+The [Project Intelligence proof replay](https://www.snipara.com/proof) measures a
+different question: whether continuity context changes what a coding agent finds
+before implementation and whether continuity-heavy scenarios pass across local,
+Codex CLI, and Claude runtimes. It is kept separate from the hosted-context
+benchmark because it uses a Snipara-owned repository and does not yet include a
+negative control where cold agents should already succeed.
+
 ## Related projects
 
 - [`snipara-evals`](https://github.com/Snipara/snipara-evals) provides the
@@ -63,4 +75,3 @@ new dated evidence pack instead of rewriting the historical result.
 ## License
 
 Apache-2.0. See [`LICENSE`](./LICENSE).
-
