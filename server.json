@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.snipara/snipara",
+  "name": "io.github.Snipara/snipara",
   "title": "Snipara Project Intelligence",
   "description": "Hosted MCP for source-backed project context, memory, code impact, and agent workflow continuity.",
   "repository": {
