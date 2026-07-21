@@ -10,6 +10,8 @@ private runbooks, internal ranking code, or credentials are included.
 
 - [`server.json`](./server.json) describes the Hosted MCP server for the
   official MCP Registry.
+- [`io.github.Snipara/snipara`](https://registry.modelcontextprotocol.io/v0.1/servers?search=Snipara&limit=100)
+  is the published official MCP Registry entry (`1.0.0`).
 - [`examples/hosted-mcp`](./examples/hosted-mcp) shows the primary HTTP setup
   path without hard-coding a project or API key.
 - [`benchmarks/hosted-context-2026-06`](./benchmarks/hosted-context-2026-06)
