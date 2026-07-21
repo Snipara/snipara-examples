@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "snipara-hosted-context-2026-06-19",
+  "snapshot_date": "2026-06-19",
+  "cases": [
+    {
+      "id": "cost_benefit_analysis",
+      "category": "reasoning",
+      "prompt": "If I have a 500K token codebase and my LLM has a 128K context window, how does Snipara help and what are the cost savings?",
+      "ground_truth_claims": [
+        "Snipara selects a much smaller focused context",
+        "A 500K-token corpus is larger than a 128K context window",
+        "Lower input-token volume can reduce inference cost"
+      ]
+    },
+    {
+      "id": "when_to_use_decompose",
+      "category": "reasoning",
+      "prompt": "When should I use snipara_decompose vs snipara_context_query?",
+      "ground_truth_claims": [
+        "snipara_context_query handles focused source retrieval",
+        "snipara_decompose breaks complex questions into sub-queries",
+        "decomposition can make dependencies and execution order explicit"
+      ]
+    },
+    {
+      "id": "search_mode_selection",
+      "category": "reasoning",
+      "prompt": "What search mode should I use for different types of queries?",
+      "ground_truth_claims": [
+        "keyword search is useful for exact terms",
+        "semantic search uses conceptual similarity",
+        "hybrid search combines keyword and semantic signals"
+      ]
+    },
+    {
+      "id": "full_request_flow",
+      "category": "multi_hop",
+      "prompt": "Trace the full flow of an MCP request from a user's Claude Desktop to database query and back.",
+      "ground_truth_claims": [
+        "the client calls a Snipara MCP tool",
+        "the hosted service authenticates and retrieves project context",
+        "ranked context returns to the client for answer synthesis"
+      ]
+    },
+    {
+      "id": "security_authentication_chain",
+      "category": "multi_hop",
+      "prompt": "What are all the authentication options available and how do they differ in security?",
+      "ground_truth_claims": [
+        "API keys support non-interactive access",
+        "OAuth device flow supports user authentication",
+        "credentials must be stored outside source control"
+      ]
+    },
+    {
+      "id": "shared_context_budget_allocation",
+      "category": "multi_hop",
+      "prompt": "How does token budget allocation work when using shared context collections?",
+      "ground_truth_claims": [
+        "shared context receives a bounded portion of the token budget",
+        "project-local context uses the remaining budget",
+        "relevant sections are selected within the available budget"
+      ]
+    },
+    {
+      "id": "nonexistent_feature",
+      "category": "edge_case",
+      "prompt": "How do I configure real-time collaborative editing in Snipara?",
+      "ground_truth_claims": [
+        "the requested document-editing feature is not part of the documented product",
+        "the answer should state the evidence gap instead of inventing setup steps"
+      ]
+    },
+    {
+      "id": "error_handling",
+      "category": "edge_case",
+      "prompt": "What happens when a user exceeds their query limit?",
+      "ground_truth_claims": [
+        "the API returns a bounded error response",
+        "the response identifies the applicable usage limit",
+        "the client should not retry an exhausted monthly quota indefinitely"
+      ]
+    },
+    {
+      "id": "empty_context",
+      "category": "edge_case",
+      "prompt": "What happens if no relevant documents are found for a query?",
+      "ground_truth_claims": [
+        "the result can contain no relevant sections",
+        "the response preserves retrieval diagnostics",
+        "the assistant should acknowledge missing evidence"
+      ]
+    },
+    {
+      "id": "snipara_sandbox_execution",
+      "category": "edge_case",
+      "prompt": "How does the execute_python tool work in Snipara Sandbox?",
+      "ground_truth_claims": [
+        "execute_python runs code in a selected execution environment",
+        "sessions can preserve REPL context",
+        "execution profiles bound time and resource use"
+      ]
+    },
+    {
+      "id": "memory_persistence",
+      "category": "edge_case",
+      "prompt": "How do agent memories persist across sessions in Snipara?",
+      "ground_truth_claims": [
+        "durable memories are stored explicitly",
+        "recall retrieves relevant reviewed memory",
+        "scope and lifecycle metadata bound memory reuse"
+      ]
+    },
+    {
+      "id": "swarm_coordination",
+      "category": "edge_case",
+      "prompt": "How do multi-agent swarms work in Snipara?",
+      "ground_truth_claims": [
+        "agents coordinate through shared task and state surfaces",
+        "claims or leases reduce conflicting work",
+        "ownership and progress remain visible"
+      ]
+    }
+  ]
+}
+
