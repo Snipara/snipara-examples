@@ -13,4 +13,3 @@ unpatched security finding.
 - Never commit `.env` files, access tokens, raw production logs, or customer
   benchmark data.
 - Treat benchmark outputs as public before adding them to an evidence pack.
-

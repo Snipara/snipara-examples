@@ -59,4 +59,3 @@ own corpus fingerprint and `results.json`; do not overwrite this evidence pack.
   claim targets, case-level metrics, aggregate math, and exact run metadata.
 - The baseline is a fixed first-window truncation, not a full long-context dump.
 - Public claims must remain scoped to this benchmark.
-

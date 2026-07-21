@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "benchmark_id": "snipara-hosted-context-2026-06-19",
-  "case_manifest_sha256": "52cb171fc64fb8094cb6ba7bb2834bbe20588928f8d33158452bf997a87f1de4",
+  "case_manifest_sha256": "aff6b8b18c12f1c731332a104074ce9066537772f63020fc881797f865b5f221",
   "generated_at": "2026-06-19T15:39:17.802778+00:00",
   "run": {
     "provider": "openai",

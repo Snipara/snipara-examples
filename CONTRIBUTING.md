@@ -22,4 +22,3 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 
 When publishing a new benchmark run, add a new dated directory. Historical
 evidence packs are immutable except for clearly documented corrections.
-

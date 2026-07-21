@@ -41,4 +41,3 @@ connection failure.
 
 Full client instructions are available at
 [snipara.com/docs/integration](https://www.snipara.com/docs/integration).
-
