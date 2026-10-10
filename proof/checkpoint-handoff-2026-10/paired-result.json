@@ -1,0 +1,97 @@
+{
+  "protocol": "checkpoint-paired-continuation-v1",
+  "date_utc": "2026-10-10",
+  "pairs": 1,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "order": ["baseline", "snipara"],
+  "companion_version": "3.7.0",
+  "input_manifest": {
+    "DECISIONS.md": "093bdfc3a6f8f7f21690470c9adca1ee6e777f650146de5d06c52f9c8937e400",
+    "PLAN.json": "6d224f614db2215c7cccf83e5063627e8a325a4f54316eebaf55d584ab5396ba",
+    "SPEC.md": "5561f5c52dd265e054f29f48b798f123522d829d4e5a1e04b650e200039f2024",
+    "ascii-evidence.json": "50ce3c666fa93661bf5caf613a5e205bd7d1fe2da128d6795c14ed1fd744c057",
+    "checkpoint.json": "f34463d0ee94483b8b08a8fc30fedad908c3b938549639b016eb073ab46784c9",
+    "slug.py": "30afebcd3c7e70b41e24ebc4975fd0198938b012b8b7e43491c786e02d31837a"
+  },
+  "results": {
+    "baseline": {
+      "agent_exit_code": 0,
+      "timed_out": false,
+      "agent_session_seconds": 30.936,
+      "usage": {
+        "input_tokens": 84640,
+        "cached_input_tokens": 73728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1163,
+        "reasoning_output_tokens": 68
+      },
+      "billing_usd": null,
+      "resume": {
+        "hosted_probe_seconds": null,
+        "resume_command_seconds": null,
+        "restored_phase": null,
+        "completed_tasks": null,
+        "adapter_seconds": 0.0
+      },
+      "acceptance": {
+        "accepted": true,
+        "stage": "full",
+        "cases": 21
+      },
+      "protected_files_unchanged": true,
+      "source_unchanged_during_validation": true,
+      "source_sha256": "3a97122e9c2cdc4ad594ca0c9e26089c7169bdac2ce5d78136b12cbd088449bb",
+      "command_execution_count": 2,
+      "completed_tasks_redone": null,
+      "time_to_first_useful_progress_seconds": null,
+      "total_harness_overhead_seconds": null
+    },
+    "snipara": {
+      "agent_exit_code": 0,
+      "timed_out": false,
+      "agent_session_seconds": 55.63,
+      "usage": {
+        "input_tokens": 152376,
+        "cached_input_tokens": 134784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1572,
+        "reasoning_output_tokens": 90
+      },
+      "billing_usd": null,
+      "resume": {
+        "hosted_probe_seconds": 1.063,
+        "resume_command_seconds": 2.38,
+        "restored_phase": "unicode",
+        "completed_tasks": 2,
+        "adapter_seconds": 3.443
+      },
+      "acceptance": {
+        "accepted": true,
+        "stage": "full",
+        "cases": 21
+      },
+      "protected_files_unchanged": true,
+      "source_unchanged_during_validation": true,
+      "source_sha256": "8ea5185524a0f77eee816da14178199ef69f26516b9cef7b583cf5c9fb5590c6",
+      "command_execution_count": 5,
+      "completed_tasks_redone": null,
+      "time_to_first_useful_progress_seconds": null,
+      "total_harness_overhead_seconds": null,
+      "resume_attempts": 2,
+      "failed_resume_attempts": 1,
+      "first_resume_failure": "Initial hosted probe failed in restricted agent sandbox; native automatic approval review allowed retry."
+    }
+  },
+  "limits": [
+    "One small local fixture and one paired continuation; no statistical reliability claim.",
+    "Frozen input was produced by native Claude Code in the earlier October 10 demonstration; Claude was not rerun for this pair.",
+    "Both arms receive the identical source, plan, decisions and original ASCII evidence. Snipara additionally has portable checkpoint state and Hosted MCP access.",
+    "Checkpoint paths are rebased and private telemetry/memory identifiers redacted. Completed phases and attempt counters are preserved.",
+    "Same model/settings/prompts and 210-second budget; sequential runs may differ due to caching and provider conditions.",
+    "Resume command time includes hosted context retrieval, excluding a separately measured MCP probe. Session time includes implementation.",
+    "Tokens are client-reported. Billing, avoided redo work, first useful progress and total harness overhead are not measured.",
+    "No live process migration, MCP-only restoration, Orchestrator controller handoff or authenticated human acceptance.",
+    "Snipara required one network-permission retry. Successful resume timing excludes the failed probe; the full session duration includes it. Its failure duration was not separately recorded."
+  ]
+}

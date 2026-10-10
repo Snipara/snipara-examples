@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "snipara.workflow.v2",
+  "workflowId": "claude-codex-checkpoint-20261010",
+  "goal": "Qualify saved Companion workflow handoff from Claude Code to Codex",
+  "status": "active",
+  "currentPhaseId": "unicode",
+  "planSource": "file",
+  "planFile": "__WORKSPACE__/PLAN.json",
+  "createdAt": "2026-10-10T20:33:04.860Z",
+  "updatedAt": "2026-10-10T20:33:24.586Z",
+  "phases": [
+    {
+      "id": "plan",
+      "title": "Phase 1",
+      "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 1",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "plan",
+          "title": "Task 1",
+          "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 1",
+          "status": "completed",
+          "acceptance": "PLAN.json and DECISIONS.md created and validated",
+          "files": [
+            "PLAN.json",
+            "DECISIONS.md"
+          ],
+          "verification": [
+            "Files exist and are well-formed JSON/Markdown"
+          ],
+          "attempt": 1,
+          "maxAttempts": 3,
+          "startedAt": "2026-10-10T20:33:08.435Z",
+          "completedAt": "2026-10-10T20:33:10.650Z",
+          "summary": "Cross-agent qualification plan and constraints recorded by Claude Code.",
+          "outcome": "completed",
+          "evidence": [
+            "passed:PLAN.json and DECISIONS.md recorded"
+          ],
+          "contextEnvelope": {
+            "version": "snipara.workflow.task-context.v1",
+            "workflowId": "claude-codex-checkpoint-20261010",
+            "phaseId": "plan",
+            "taskId": "plan",
+            "attempt": 1,
+            "maxAttempts": 3,
+            "contextPolicy": "bounded-task-context-no-raw-transcript",
+            "scope": {
+              "title": "Task 1",
+              "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 1",
+              "acceptance": "PLAN.json and DECISIONS.md created and validated",
+              "files": [
+                "PLAN.json",
+                "DECISIONS.md"
+              ],
+              "verification": [
+                "Files exist and are well-formed JSON/Markdown"
+              ],
+              "dependencies": []
+            },
+            "commands": {
+              "bootstrap": "snipara-companion session-bootstrap --include-session-context --max-context-tokens 1000",
+              "resume": "snipara-companion workflow resume --include-session-context",
+              "impact": "snipara-companion code impact --changed-files 'PLAN.json' 'DECISIONS.md' --diff-summary 'Task 1'",
+              "commit": "snipara-companion workflow task-commit 'plan' 'plan' --summary '<what changed>' --outcome completed --files 'PLAN.json' 'DECISIONS.md'"
+            }
+          }
+        }
+      ],
+      "startedAt": "2026-10-10T20:33:08.231Z",
+      "completedAt": "2026-10-10T20:33:14.207Z",
+      "summary": "Cross-agent qualification plan and constraints recorded by Claude Code.",
+      "outcome": "completed"
+    },
+    {
+      "id": "ascii",
+      "title": "Phase 2",
+      "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 2",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "ascii",
+          "title": "Task 1",
+          "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 2",
+          "status": "completed",
+          "acceptance": "ASCII baseline implementation complete and passing ASCII tests",
+          "files": [
+            "slug.py"
+          ],
+          "verification": [
+            "slugify function handles ASCII input correctly: lowercase",
+            "collapse separators",
+            "trim outer hyphens"
+          ],
+          "attempt": 1,
+          "maxAttempts": 3,
+          "startedAt": "2026-10-10T20:33:19.047Z",
+          "completedAt": "2026-10-10T20:33:21.021Z",
+          "summary": "Claude Code completed ASCII baseline; Unicode and final independent verification remain pending.",
+          "outcome": "completed",
+          "evidence": [
+            "passed:Six ASCII cases passed independently"
+          ],
+          "contextEnvelope": {
+            "version": "snipara.workflow.task-context.v1",
+            "workflowId": "claude-codex-checkpoint-20261010",
+            "phaseId": "ascii",
+            "taskId": "ascii",
+            "attempt": 1,
+            "maxAttempts": 3,
+            "contextPolicy": "bounded-task-context-no-raw-transcript",
+            "scope": {
+              "title": "Task 1",
+              "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 2",
+              "acceptance": "ASCII baseline implementation complete and passing ASCII tests",
+              "files": [
+                "slug.py"
+              ],
+              "verification": [
+                "slugify function handles ASCII input correctly: lowercase",
+                "collapse separators",
+                "trim outer hyphens"
+              ],
+              "dependencies": []
+            },
+            "commands": {
+              "bootstrap": "snipara-companion session-bootstrap --include-session-context --max-context-tokens 1000",
+              "resume": "snipara-companion workflow resume --include-session-context",
+              "impact": "snipara-companion code impact --changed-files 'slug.py' --diff-summary 'Task 1'",
+              "commit": "snipara-companion workflow task-commit 'ascii' 'ascii' --summary '<what changed>' --outcome completed --files 'slug.py'"
+            }
+          }
+        }
+      ],
+      "startedAt": "2026-10-10T20:33:18.837Z",
+      "completedAt": "2026-10-10T20:33:24.586Z",
+      "summary": "Claude Code completed ASCII baseline; Unicode and final independent verification remain pending.",
+      "outcome": "completed"
+    },
+    {
+      "id": "unicode",
+      "title": "Phase 3",
+      "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 3",
+      "status": "pending",
+      "tasks": [
+        {
+          "id": "unicode",
+          "title": "Task 1",
+          "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 3",
+          "status": "pending",
+          "acceptance": "Unicode normalization implemented using NFKD, invalid inputs rejected",
+          "files": [
+            "slug.py"
+          ],
+          "verification": [
+            "slugify handles Unicode input with NFKD normalization",
+            "raises TypeError/ValueError as specified"
+          ],
+          "attempt": 0,
+          "maxAttempts": 3
+        }
+      ],
+      "currentTaskId": "unicode"
+    },
+    {
+      "id": "verification",
+      "title": "Phase 4",
+      "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 4",
+      "status": "pending",
+      "tasks": [
+        {
+          "id": "verification",
+          "title": "Task 1",
+          "query": "Qualify saved Companion workflow handoff from Claude Code to Codex: Phase 4",
+          "status": "pending",
+          "acceptance": "All tests pass, implementation meets SPEC.md requirements",
+          "files": [
+            "slug.py"
+          ],
+          "verification": [
+            "Final validation of complete implementation against SPEC.md"
+          ],
+          "attempt": 0,
+          "maxAttempts": 3
+        }
+      ],
+      "currentTaskId": "verification"
+    }
+  ],
+  "judgmentHistory": [],
+  "phaseCommitReceipts": [
+    {
+      "phaseId": "plan",
+      "capturedAt": "2026-10-10T20:33:14.207Z",
+      "category": "agent:snipara-lead",
+      "outcome": "completed",
+      "hostedStatus": "processed",
+      "stored": [],
+      "skipped": [
+        {
+          "text": "Workflow claude-codex-checkpoint-20261010 Phase plan: Phase 1 Cross-agent qualification plan and constraints recorded by Claude Code.",
+          "type": "context",
+          "reason": "duplicate",
+          "source": "phase_commit",
+          "phaseId": "plan"
+        }
+      ],
+      "whyCapture": {
+        "sourceKind": "phase_commit",
+        "previewCandidateCount": 0,
+        "capturedCount": 0,
+        "previewCandidates": [],
+        "pendingMemories": [],
+        "duplicates": [],
+        "failed": [],
+        "status": "no_candidates"
+      }
+    },
+    {
+      "phaseId": "ascii",
+      "capturedAt": "2026-10-10T20:33:24.586Z",
+      "category": "agent:snipara-lead",
+      "outcome": "completed",
+      "hostedStatus": "processed",
+      "stored": [
+        {
+          "memoryId": "redacted-private-memory-reference",
+          "text": "Workflow claude-codex-checkpoint-20261010 Phase ascii: Phase 2 Claude Code completed ASCII baseline; Unicode and final independent verification remain pending.",
+          "type": "context",
+          "reason": "novel",
+          "source": "phase_commit",
+          "phaseId": "ascii"
+        }
+      ],
+      "skipped": [],
+      "whyCapture": {
+        "sourceKind": "phase_commit",
+        "previewCandidateCount": 0,
+        "capturedCount": 0,
+        "previewCandidates": [],
+        "pendingMemories": [],
+        "duplicates": [],
+        "failed": [],
+        "status": "no_candidates"
+      }
+    }
+  ],
+  "lastCommit": {
+    "category": "agent:snipara-lead",
+    "outcome": "completed",
+    "summary": "Claude Code completed ASCII baseline; Unicode and final independent verification remain pending.",
+    "committedAt": "2026-10-10T20:33:24.586Z"
+  }
+}

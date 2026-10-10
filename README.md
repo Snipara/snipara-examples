@@ -8,6 +8,10 @@ private runbooks, internal ranking code, or credentials are included.
 
 ## Start here
 
+- [`proof/checkpoint-handoff-2026-10`](./proof/checkpoint-handoff-2026-10) contains
+  a runnable Claude-produced checkpoint scenario, one paired native Codex
+  continuation with/without Snipara and both independently validated candidates.
+
 - [`server.json`](./server.json) describes the Hosted MCP server for the
   official MCP Registry.
 - [`io.github.Snipara/snipara`](https://registry.modelcontextprotocol.io/v0.1/servers?search=Snipara&limit=100)

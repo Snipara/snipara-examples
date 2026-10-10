@@ -1,0 +1,51 @@
+{
+  "schema": "snipara.public-checkpoint-demonstration.v1",
+  "date": "2026-10-10",
+  "product": "Companion 3.7.0",
+  "provenance": "operator-reported local development demonstration",
+  "fixture_count": 1,
+  "clients": ["Claude Code / Haiku 4.5", "Fresh Codex CLI / gpt-6.1-sol"],
+  "sequence": [
+    "Claude: plan and ASCII phases completed",
+    "Saved local Companion checkpoint",
+    "Fresh Codex: resume and Unicode phase completed",
+    "Separate controller: independent validation and final phase"
+  ],
+  "result": {
+    "accepted": true,
+    "same_workspace": true,
+    "fresh_codex_session": true,
+    "restored_phase": "unicode",
+    "plan_unchanged": true,
+    "decisions_unchanged": true,
+    "completed_phase_records_unchanged": true,
+    "attempt_counters_preserved": true,
+    "original_evidence_unchanged": true,
+    "phase_commit_receipts_preserved": true,
+    "independent_validation": {
+      "accepted": true,
+      "stage": "full",
+      "cases": 21
+    },
+    "source_unchanged_during_validation": true,
+    "source_sha256": "e23c7d93aa667252de9385408dd41dba92b68bc4495ab15df2a9e83962a27f52"
+  },
+  "requirements": [
+    "shared saved .snipara workflow state",
+    "project files",
+    "referenced workflow artifacts",
+    "access to the project\u2019s hosted Snipara MCP"
+  ],
+  "assistance": "Operator-owned driver dispatched actual published Companion commands for both clients.",
+  "review": "Independent validator and source inspection outside the producing Codex session; no authenticated human acceptance attestation.",
+  "not_exercised": [
+    "MCP-only restoration of missing local state",
+    "live-process migration",
+    "cross-client Orchestrator controller continuation"
+  ],
+  "scope": "One local fixture; not a general reliability or universal compatibility benchmark.",
+  "evidence_sha256": {
+    "independent_acceptance": "ad22585c2776c50454ceb2acf7619f9b3d749d41fdc25ee2fcb75b182e13b7c9"
+  },
+  "invocation_note": "A Codex CLI argument conflict was corrected before the model ran; the successful handoff used a fresh exec session."
+}

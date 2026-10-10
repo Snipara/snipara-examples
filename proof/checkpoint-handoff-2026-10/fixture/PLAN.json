@@ -1,0 +1,48 @@
+{
+  "phases": [
+    {
+      "id": "plan",
+      "tasks": [
+        {
+          "id": "plan",
+          "acceptance": "PLAN.json and DECISIONS.md created and validated",
+          "files": ["PLAN.json", "DECISIONS.md"],
+          "verification": "Files exist and are well-formed JSON/Markdown"
+        }
+      ]
+    },
+    {
+      "id": "ascii",
+      "tasks": [
+        {
+          "id": "ascii",
+          "acceptance": "ASCII baseline implementation complete and passing ASCII tests",
+          "files": ["slug.py"],
+          "verification": "slugify function handles ASCII input correctly: lowercase, collapse separators, trim outer hyphens"
+        }
+      ]
+    },
+    {
+      "id": "unicode",
+      "tasks": [
+        {
+          "id": "unicode",
+          "acceptance": "Unicode normalization implemented using NFKD, invalid inputs rejected",
+          "files": ["slug.py"],
+          "verification": "slugify handles Unicode input with NFKD normalization, raises TypeError/ValueError as specified"
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "tasks": [
+        {
+          "id": "verification",
+          "acceptance": "All tests pass, implementation meets SPEC.md requirements",
+          "files": ["slug.py"],
+          "verification": "Final validation of complete implementation against SPEC.md"
+        }
+      ]
+    }
+  ]
+}
